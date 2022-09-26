@@ -90,7 +90,7 @@ resource "aws_cloudfront_distribution" "three-oh-one" {
     min_ttl          = 0
 
     forwarded_values {
-      query_string = false
+      query_string = true
 
       cookies {
         forward = "none"
